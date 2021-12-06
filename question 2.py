@@ -1,5 +1,5 @@
 
-# creating the dicitonary
+# creating the dictionary
 marks={}
 temp_marks={}
 num = int(input("How many students do you wish to add to the database: "))
