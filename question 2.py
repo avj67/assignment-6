@@ -27,10 +27,12 @@ print("Dictionary of students: ",marks)
 # displaying names above 75
 
 
+print()
 print("Students with marks above 75: ")
+print("*****************************")
+print()
 for key in marks:
     if marks[key][1] > 75:
-         print(marks[key][0], end= ", ")
-
+         print(marks[key][0]," - ",marks[key][1])
     else:
          continue
