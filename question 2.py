@@ -1,5 +1,5 @@
 
-# creating the dicitonary
+# creating the dictionary
 marks={}
 temp_marks={}
 num = int(input("How many students do you wish to add to the database: "))
@@ -24,13 +24,15 @@ for i in range (num):
 
 print("Dictionary of students: ",marks)
 
-# displaying names above 75
+# displaying names above 75 in a tabular format
 
 
+print()
 print("Students with marks above 75: ")
+print("*****************************")
+print()
 for key in marks:
     if marks[key][1] > 75:
-         print(marks[key][0], end= ", ")
-
+         print(marks[key][0]," - ",marks[key][1])
     else:
          continue
