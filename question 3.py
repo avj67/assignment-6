@@ -1,6 +1,6 @@
 # A program to take in a word from a user and create a dictionary where key value is letters and occurence is value
 
-# Taking input from user
+# Taking input from users
 word = input("Enter the word please: ")
 
 # Typecasting to list for convenience
