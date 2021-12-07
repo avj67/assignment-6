@@ -24,7 +24,7 @@ for i in range (num):
 
 print("Dictionary of students: ",marks)
 
-# displaying names above 75
+# displaying names above 75 in a tabular format
 
 
 print()
