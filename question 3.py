@@ -9,7 +9,7 @@ word_list = list(word)
 # creating a list without doubles
 nodoubles_list = list(set(word_list))
 
-# Creating dictionary with all having base value as 1
+# Creating dictionary with all having base value as 1.
 main_dict = dict.fromkeys(word_list,0)
 
 # Declaring some variables for later use
