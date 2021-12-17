@@ -23,6 +23,8 @@ while True :
         if option == 1:
             print()
             item_search = input("Enter item name please: ")
+            item_search.lower() # case sensitvity
+            print(item_search)
 
             if item_search in shop_list:
                 for i in shop_list:
@@ -38,6 +40,7 @@ while True :
         if option == 2:
             print()
             item_rename = input("Enter item to be renamed please: ")
+            item_rename.lower() # case sensitivity
             new_name = input("Enter the item's new name please: ")
 
 
@@ -67,5 +70,4 @@ while True :
         break
 print()
 print("Thank you for using our services!")
-
 
