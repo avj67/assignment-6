@@ -19,17 +19,19 @@ d1={}
 tempcount= len(word_list)
 index=0
 
-print(main_dict)
 
-for i in nodoubles_list:                    #basically gives us value 1 more than i index for next for loop\
-    for j in range (index,count):               #checks for common values also adds 1 for starting letter
-        if nodoubles_list[index] == word_list[j]:
-            main_dict[word_list[index]]+=1
+print(main_dict)
+for i in nodoubles_list:
+    for j in range (index,count):
+        if i == word_list[j]:
+             main_dict[word_list[j]]+=1
     index+=1
 print(main_dict)
 
-#for i in range (tempcount):              #basically gives us value 1 more than i index for next for loop
-    #for j in range (i,count):               #checks for common values also adds 1 for starting letter
+#what i was using but this gives 1 extra count to double letters because it takes the double letters each  so count +1 extra
+#for i in range (tempcount):
+    #for j in range (i,count):
         #if word_list[i] == word_list[j]:
             #main_dict[word_list[i]]+=1
+
 
