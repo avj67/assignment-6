@@ -23,12 +23,11 @@ while True :
         if option == 1:
             print()
             item_search = input("Enter item name please: ")
-            item_search.lower() # case sensitvity
-            print(item_search)
+            case_item_search = item_search.lower() # case sensitvity
 
-            if item_search in shop_list:
+            if case_item_search in shop_list:
                 for i in shop_list:
-                    if item_search == i:
+                    if case_item_search == i:
                         print("Item: ", i)
                         print("Stock: ", shop_list[i][0])
                         print("Price: ", shop_list[i][1])
@@ -40,15 +39,15 @@ while True :
         if option == 2:
             print()
             item_rename = input("Enter item to be renamed please: ")
-            item_rename.lower() # case sensitivity
+            case_item_rename = item_rename.lower() # case sensitivity
             new_name = input("Enter the item's new name please: ")
 
 
-            if item_rename in shop_list:
+            if case_item_rename in shop_list:
                 # dictionary keys are uneditable so what we do is we make a new key with same values and delete old one
-                temp_value = shop_list[item_rename]
+                temp_value = shop_list[case_item_rename]
                 temp_dict={new_name:temp_value} #creating a temporary dictionary with new key name and old values
-                shop_list.pop(item_rename) # deletes key with string value matching input from user
+                shop_list.pop(case_item_rename) # deletes key with string value matching input from user
                 shop_list.update(temp_dict) # adds new name with same stock and price
                 print("Item has been renamed")
             else:
