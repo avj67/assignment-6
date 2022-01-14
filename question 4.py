@@ -36,6 +36,7 @@ while True :
                 print("Item not found")
 
         #  renaming an item
+
         if option == 2:
             print()
             item_rename = input("Enter item to be renamed please: ")
