@@ -19,7 +19,6 @@ d1={}
 tempcount= len(word_list)
 index=0
 
-
 print(main_dict)
 for i in nodoubles_list:
     for j in range (index,count):
